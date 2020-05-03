@@ -33,22 +33,6 @@ struct AthanView: View {
                 .bold()
                 
             }.offset(y: -210)
-//            HStack{
-//                   Text("09:41")
-//                   .foregroundColor(.black)
-//                   .offset(x: -130, y: -430)
-//
-//                   Image("battery.100")
-//                   .resizable()
-//                   .frame(width: 30, height: 10)
-//                   .offset(x: 160, y: -430)
-//
-//                   Image("wifi")
-//                   .resizable()
-//                   .frame(width: 20, height: 15)
-//                   .offset(x: 90, y: -430)
-//
-//               }
             HStack{
                 Image("kaba")
                          .resizable()
@@ -86,30 +70,7 @@ struct AthanView: View {
                     .padding(.trailing)
                     }.background(Color.gray.opacity(0.5))
                     }.offset(y:-60)
-                    //
-                    //            HStack {
-                    //                Spacer()
-                    //
-                    //                VStack (spacing: 60){
-                    //                    Text("الفجر")
-                    //                    Text("الشروق")
-                    //                    Text("الظهر")
-                    //                    Text("العصر")
-                    //                    Text("المغرب")
-                    //                    Text("العشاء")
-                    //                }.offset(x:-20,y:170)
-                    //
-                    //                VStack (spacing: 60){
-                    //                            Text("3:44 AM")
-                    //                            Text("5:09 AM")
-                    //                            Text("11:46 AM")
-                    //                            Text("3:21 PM")
-                    //                            Text("6:22 PM")
-                    //                           Text("7:45 PM")
-                    //                        }.offset(x:-280,y:170)
-                    //                    .clipShape(Capsule())
-                    //            }
-
+                
 
                     VStack (spacing:30){
 
