@@ -159,7 +159,7 @@ struct ContentView: View {
                   .fontWeight(.bold)
                   .foregroundColor(.white)
               }.offset( y: 50)
-                
+                VStack(spacing: 40){
                 HStack{
                               WeatherView()
                 }
@@ -175,7 +175,7 @@ struct ContentView: View {
                 HStack{
                               WeatherView()
                           }
-                
+                }
             }
                 
                 }

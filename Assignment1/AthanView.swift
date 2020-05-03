@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct AthanView: View {
-@State var color = Color.purple
+    @State var color = Color.purple
     var body: some View {
         
         ZStack{
@@ -84,7 +84,7 @@ struct AthanView: View {
                         .padding()
                     .foregroundColor(.white)
                     .onTapGesture {
-                    self.color = Color.blue
+                        self.color = Color.blue.opacity(0.5)
 
 
                     }
@@ -101,7 +101,7 @@ struct AthanView: View {
                         .padding()
                     .foregroundColor(.white)
                     .onTapGesture {
-                    self.color = Color.black
+                        self.color = Color.black.opacity(0.5)
                     }
 
                     }
@@ -115,7 +115,7 @@ struct AthanView: View {
                         .padding()
                     .foregroundColor(.white)
                     .onTapGesture {
-                    self.color = Color.orange
+                        self.color = Color.orange.opacity(0.5)
 
 
                     }
@@ -130,7 +130,7 @@ struct AthanView: View {
                         .padding()
                     .foregroundColor(.white)
                     .onTapGesture {
-                    self.color = Color.yellow
+                        self.color = Color.yellow.opacity(0.5)
 
 
                     }
@@ -146,7 +146,7 @@ struct AthanView: View {
                         .padding()
                     .foregroundColor(.white)
                     .onTapGesture {
-                    self.color = Color.green
+                        self.color = Color.green.opacity(0.5)
 
 
                     }
@@ -165,14 +165,14 @@ struct AthanView: View {
                     .foregroundColor(.white)
                         .padding()
                     .onTapGesture {
-                    self.color = Color.gray
+                        self.color = Color.gray.opacity(0.5)
 
 
                     }
                     }
                     
                     }.background(Color.gray.opacity(0.5))
-                        .offset(y:220)
+                        .offset(y:209)
             
 
      
