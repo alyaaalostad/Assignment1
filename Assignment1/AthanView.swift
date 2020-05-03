@@ -50,8 +50,9 @@ struct AthanView: View {
 //
 //               }
             HStack{
-                Image("kaaba")
+                Image("kaba")
                          .resizable()
+
                          .frame(width: 40, height: 40)
                          .offset(x: -135, y: -370)
                              
@@ -64,134 +65,154 @@ struct AthanView: View {
             
             VStack{
    
-                
-                HStack {
+
+                    HStack {
                     Text("<")
-                       .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .padding(.leading)
-                      
+                    .font(.system(size:30))
+                    .foregroundColor(.white)
+                    .padding(.leading)
+
                     Spacer()
-                        
+
                     Text("ابريل 28 - 5 رمضان")
-                        .font(.system(size:20))
-                        .foregroundColor(.white)
-                        .padding(.horizontal)
+                    .font(.system(size:20))
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
                     Spacer()
-                    
+
                     Text(" > ")
                     .font(.system(size:30))
-                        .foregroundColor(.white)
-                        .padding(.trailing)
-                }.background(Color.gray.opacity(0.5))
-            }.offset(y:-90)
-//
-//            HStack {
-//                Spacer()
-//
-//                VStack (spacing: 60){
-//                    Text("الفجر")
-//                    Text("الشروق")
-//                    Text("الظهر")
-//                    Text("العصر")
-//                    Text("المغرب")
-//                    Text("العشاء")
-//                }.offset(x:-20,y:170)
-//
-//                VStack (spacing: 60){
-//                            Text("3:44 AM")
-//                            Text("5:09 AM")
-//                            Text("11:46 AM")
-//                            Text("3:21 PM")
-//                            Text("6:22 PM")
-//                           Text("7:45 PM")
-//                        }.offset(x:-280,y:170)
-//                    .clipShape(Capsule())
-//            }
-            
-    
-            VStack{
-                
+                    .foregroundColor(.white)
+                    .padding(.trailing)
+                    }.background(Color.gray.opacity(0.5))
+                    }.offset(y:-60)
+                    //
+                    //            HStack {
+                    //                Spacer()
+                    //
+                    //                VStack (spacing: 60){
+                    //                    Text("الفجر")
+                    //                    Text("الشروق")
+                    //                    Text("الظهر")
+                    //                    Text("العصر")
+                    //                    Text("المغرب")
+                    //                    Text("العشاء")
+                    //                }.offset(x:-20,y:170)
+                    //
+                    //                VStack (spacing: 60){
+                    //                            Text("3:44 AM")
+                    //                            Text("5:09 AM")
+                    //                            Text("11:46 AM")
+                    //                            Text("3:21 PM")
+                    //                            Text("6:22 PM")
+                    //                           Text("7:45 PM")
+                    //                        }.offset(x:-280,y:170)
+                    //                    .clipShape(Capsule())
+                    //            }
 
-                HStack (spacing: 230){
-                     Text("3:44 AM")
-                        .foregroundColor(.white)
+
+                    VStack (spacing:30){
+
+
+                    HStack {
+                    Text("3:44 AM")
+                        .padding()
+                    .foregroundColor(.white)
+                        Spacer()
                     Text("الفجر")
-   .foregroundColor(.white)
-                        .onTapGesture {
-                            self.color = Color.blue
-                          
-                                    
+                        .padding()
+                    .foregroundColor(.white)
+                    .onTapGesture {
+                    self.color = Color.blue
+
+
                     }
-                }.offset(y:40)
-           
-            
+                    }
 
-                HStack (spacing: 230){
-                     Text("5:09 AM")
-   .foregroundColor(.white)
+
+
+                    HStack {
+                    Text("5:09 AM")
+                        .padding()
+                    .foregroundColor(.white)
+                        Spacer()
                     Text("الشروق")
-   .foregroundColor(.white)
+                        .padding()
+                    .foregroundColor(.white)
                     .onTapGesture {
-                                       self.color = Color.black
-                                     
-                                               
-                               }
+                    self.color = Color.black
+                    }
 
-                }.offset(y:80)
+                    }
 
-                HStack (spacing: 240){
-                           Text("11:46 AM")
-   .foregroundColor(.white)
-                          Text("الظهر")
-   .foregroundColor(.white)
+                    HStack{
+                    Text("11:46 AM")
+                        .padding()
+                    .foregroundColor(.white)
+                        Spacer()
+                    Text("الظهر")
+                        .padding()
+                    .foregroundColor(.white)
                     .onTapGesture {
-                                       self.color = Color.orange
-                                     
-                                               
-                               }
-                      }.offset(y:140)
+                    self.color = Color.orange
 
-                   HStack (spacing: 240){
+
+                    }
+                    }
+
+                    HStack{
                     Text("3:21 PM")
-   .foregroundColor(.white)
+                        .padding()
+                    .foregroundColor(.white)
+                        Spacer()
                     Text("العصر")
-   .foregroundColor(.white)
+                        .padding()
+                    .foregroundColor(.white)
                     .onTapGesture {
-                                       self.color = Color.yellow
-                                     
-                                               
-                               }
+                    self.color = Color.yellow
 
-                    }.offset(y:190)
 
-                HStack (spacing: 240){
-                        Text("6:22 PM")
-   .foregroundColor(.white)
-                        Text("المغرب")
-   .foregroundColor(.white)
+                    }
+
+                    }
+
+                    HStack {
+                    Text("6:22 PM")
+                        .padding()
+                    .foregroundColor(.white)
+                        Spacer()
+                    Text("المغرب")
+                        .padding()
+                    .foregroundColor(.white)
                     .onTapGesture {
-                                       self.color = Color.green
-                                     
-                                               
-                               }
+                    self.color = Color.green
 
-                        }.offset(y:250)
 
-                HStack (spacing: 240){
-                        Text("7:45 AM")
-   .foregroundColor(.white)
-                        Text("العشاء")
+                    }
 
-   .foregroundColor(.white)
+                    }
+
+                    HStack {
+                      
+                    Text("7:45 AM")
+                        .padding()
+                    .foregroundColor(.white)
+                        Spacer()
+                        
+                    Text("العشاء")
+
+                    .foregroundColor(.white)
+                        .padding()
                     .onTapGesture {
-                                       self.color = Color.gray
-                                     
-                                               
-                               }
-                        }.offset(y:300)
+                    self.color = Color.gray
 
-                }
+
+                    }
+                    }
+                    
+                    }.background(Color.gray.opacity(0.5))
+                        .offset(y:220)
+            
 
      
       
