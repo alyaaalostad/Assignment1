@@ -13,7 +13,7 @@ struct AthanView: View {
     var body: some View {
         
         ZStack{
-            Color.purple
+            color
                 .edgesIgnoringSafeArea(.all)
             
             
@@ -33,22 +33,22 @@ struct AthanView: View {
                 .bold()
                 
             }.offset(y: -210)
-            HStack{
-                   Text("09:41")
-                   .foregroundColor(.black)
-                   .offset(x: -130, y: -430)
-                   
-                   Image("battery.100")
-                   .resizable()
-                   .frame(width: 30, height: 10)
-                   .offset(x: 160, y: -430)
-                   
-                   Image("wifi")
-                   .resizable()
-                   .frame(width: 20, height: 15)
-                   .offset(x: 90, y: -430)
-                   
-               }
+//            HStack{
+//                   Text("09:41")
+//                   .foregroundColor(.black)
+//                   .offset(x: -130, y: -430)
+//
+//                   Image("battery.100")
+//                   .resizable()
+//                   .frame(width: 30, height: 10)
+//                   .offset(x: 160, y: -430)
+//
+//                   Image("wifi")
+//                   .resizable()
+//                   .frame(width: 20, height: 15)
+//                   .offset(x: 90, y: -430)
+//
+//               }
             HStack{
                 Image("kaaba")
                          .resizable()
@@ -118,6 +118,11 @@ struct AthanView: View {
                         .foregroundColor(.white)
                     Text("الفجر")
    .foregroundColor(.white)
+                        .onTapGesture {
+                            self.color = Color.blue
+                          
+                                    
+                    }
                 }.offset(y:40)
            
             
@@ -127,6 +132,11 @@ struct AthanView: View {
    .foregroundColor(.white)
                     Text("الشروق")
    .foregroundColor(.white)
+                    .onTapGesture {
+                                       self.color = Color.black
+                                     
+                                               
+                               }
 
                 }.offset(y:80)
 
@@ -135,7 +145,11 @@ struct AthanView: View {
    .foregroundColor(.white)
                           Text("الظهر")
    .foregroundColor(.white)
-
+                    .onTapGesture {
+                                       self.color = Color.orange
+                                     
+                                               
+                               }
                       }.offset(y:140)
 
                    HStack (spacing: 240){
@@ -143,6 +157,11 @@ struct AthanView: View {
    .foregroundColor(.white)
                     Text("العصر")
    .foregroundColor(.white)
+                    .onTapGesture {
+                                       self.color = Color.yellow
+                                     
+                                               
+                               }
 
                     }.offset(y:190)
 
@@ -151,6 +170,11 @@ struct AthanView: View {
    .foregroundColor(.white)
                         Text("المغرب")
    .foregroundColor(.white)
+                    .onTapGesture {
+                                       self.color = Color.green
+                                     
+                                               
+                               }
 
                         }.offset(y:250)
 
@@ -160,6 +184,11 @@ struct AthanView: View {
                         Text("العشاء")
 
    .foregroundColor(.white)
+                    .onTapGesture {
+                                       self.color = Color.gray
+                                     
+                                               
+                               }
                         }.offset(y:300)
 
                 }
